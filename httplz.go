@@ -65,7 +65,7 @@ func makeStringConverter(args []string) (stringConverter, error) {
 var DEFAULT_PORT = 8080
 
 func printUsage() {
-	fmt.Printf("Usage: httplz [--port %d] CMD", DEFAULT_PORT)
+	fmt.Printf("Usage: httplz [--port %d] CMD\n", DEFAULT_PORT)
 	fmt.Println("Will pass POST bodies on PORT to CMD, responding with stdout")
 	os.Exit(1)
 }
